@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zhiping.alibaba.androidcanvastest.Main2Activity"
+    tools:showIn="@layout/activity_main2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="357dp"
+        android:layout_height="147dp"
+        app:srcCompat="@drawable/aaa"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="色调"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="247dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="354dp"
+        android:layout_height="12dp"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="207dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="饱和度"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="317dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="351dp"
+        android:layout_height="20dp"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="271dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="亮度"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="374dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="357dp"
+        android:layout_height="16dp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="343dp"/>
+
+
+
+
+
+
+</LinearLayout>
