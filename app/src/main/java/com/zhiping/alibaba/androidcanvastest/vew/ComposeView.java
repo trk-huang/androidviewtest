@@ -49,7 +49,8 @@ public class ComposeView extends View {
 
         LinearGradient linearGradient = new LinearGradient(0, 0, width, height, Color.RED, Color.YELLOW, Shader.TileMode.REPEAT);
         RadialGradient radialGradient = new RadialGradient(width, height, width, Color.BLUE, Color.CYAN, Shader.TileMode.REPEAT);
-        ComposeShader composeShader = new ComposeShader(linearGradient, radialGradient, new PorterDuffXfermode(PorterDuff.Mode.SCREEN));
+//        ComposeShader composeShader = new ComposeShader(linearGradient, radialGradient, new PorterDuffXfermode(PorterDuff.Mode.SCREEN));
+        ComposeShader composeShader = new ComposeShader(linearGradient, radialGradient, PorterDuff.Mode.SCREEN);
         mPaint.setShader(composeShader);
         canvas.drawRect(0, 0, getWidth(), getHeight(), mPaint);
     }
