@@ -7,8 +7,13 @@
     android:layout_height="match_parent"
     tools:context="com.zhiping.alibaba.androidcanvastest.Main9Activity">
 
-    <com.zhiping.alibaba.androidcanvastest.vew.ComposeView
+    <!--<com.zhiping.alibaba.androidcanvastest.vew.ComposeView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="visible"/>-->
+
+    <com.zhiping.alibaba.androidcanvastest.vew.DrawBitmapTestView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:visibility="visible"/>
 </android.support.constraint.ConstraintLayout>
