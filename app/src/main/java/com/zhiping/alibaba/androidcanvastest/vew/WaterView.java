@@ -47,8 +47,8 @@ public class WaterView extends View {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         width = w;
         height = h;
-        waterY = 1 / 8f * height;
-        ctrY = -1 / 16f * height;
+        waterY = height;
+        ctrY = 15 / 16f * height;
     }
 
     @Override
@@ -72,9 +72,12 @@ public class WaterView extends View {
             isInc = true;
         }
         ctrX = isInc ? ctrX + 20 : ctrX - 20;
-        if (ctrY <= height){
-            ctrY += 2;
-            waterY += 2;
+        if (ctrY >= 0.5 * height && ctrY <= height) {
+            ctrY -= 3;
+            waterY -= 2;
+        } else if (ctrY <= 0.5 * height) {
+            ctrY -= 2;
+            waterY -= 2;
         }
         mPath.reset();
     }
